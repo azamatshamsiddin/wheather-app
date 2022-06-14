@@ -1,0 +1,122 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/weekly?water/?landscape");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  /* font-family: "Concert One", cursive; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  max-width: 114rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 100px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px 6px rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  max-width: 550px;
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+}
+.wrapper__location {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(18, 31, 38, 0.8);
+  margin-bottom: 10px;
+}
+.wrapper__day {
+  margin-bottom: 10px;
+}
+.wrapper__temp {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgba(18, 31, 38, 0.8);
+}
+
+.wrapper__icon {
+  width: 100px;
+  height: 100px;
+}
+/* .wrapper__temp-status {
+}
+.wrapper__temp-interval {
+} */
+
+.search-box__input {
+  margin-top: 50px;
+  padding: 15px;
+  border: none;
+  border-bottom: 3px solid rgba(21, 45, 58, 0.8);
+  border-radius: 15px 0 15px 0;
+  outline: none;
+  transition: all ease-in-out 0.3s;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  font-size: 18px;
+  color: rgba(18, 31, 38, 0.8);
+}
+
+.search-box__input:focus {
+  border-radius: 0 15px;
+  border-bottom: 3px solid rgb(29, 218, 76);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-box__input::placeholder {
+  font-size: 18px;
+  color: rgba(18, 31, 38, 0.5);
+  transition: all ease-in-out 0.3s;
+}
+.search-box__input:focus::placeholder {
+  color: rgba(18, 31, 38, 0.8);
+}

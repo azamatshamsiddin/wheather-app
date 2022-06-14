@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="wrapper">
+      <h2 class="wrapper__location">Tashkent, UZ</h2>
+      <p class="wrapper__date">Monday 8 June 2021</p>
+      <p class="wrapper__temp">35<span>°C</span></p>
+      <div class="wrapper__icon">
+        <img class="wrapper__icon-img" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+      </div>
+      <p class="wrapper__temp-status">Hot</p>
+      <p class="wrapper__temp-interval">19°C / 23°C</p>
+    </div>
+
+    <div class="search-box">
+      <input class="search-box__input" type="text" autocomplete="off" placeholder="Search...">
+    </div>
+  </main>
+
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>
